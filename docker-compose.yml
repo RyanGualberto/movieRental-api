@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  database: 
+    build: .
+    container_name: movierental-db
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3006:3306"
